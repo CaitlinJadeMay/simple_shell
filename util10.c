@@ -71,7 +71,8 @@ num_len = 1;
 else
 {
 unsigned int temp = num;
-while (temp != 0) {
+while (temp != 0)
+{
 temp /= 10;
 num_len++;
 }

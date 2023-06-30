@@ -11,7 +11,6 @@ int main(__attribute__((unused)) int argc, char **argv)
 {
 char *user_input, **command, **command_list;
 int command_count = 0, index, loop_condition = 1, status = 0;
-
 if (argv[1] != NULL)
 read_file(argv[1], argv);
 signal(SIGINT, signal_to_handle);

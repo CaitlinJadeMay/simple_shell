@@ -80,7 +80,7 @@ MYPRINT("\n$ ");
 
 /**
 * execute_echo_command - Executes built-in echo function
-* @cmd: Parsed Command
+* @arguments: Parsed Command
 * Return: 0 Upon Success -1 Upon Failure
 */
 int execute_echo_command(char **arguments)

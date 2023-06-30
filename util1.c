@@ -2,7 +2,7 @@
 
 /**
 * find_command_path -  Search In $PATH for executable command
-* @cmd: Parsed input
+* @command: Parsed input
 * Return: 0 on success or  1 on failure  0
 */
 int find_command_path(char **command)
