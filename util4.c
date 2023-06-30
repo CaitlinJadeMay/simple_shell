@@ -9,32 +9,26 @@
 */
 char *mystrtok(char *str, const char *delim)
 {
-static char *token_string;
-static char *next_token;
+static char *token_string, *next_token;
 unsigned int token_index = 0;
-
 if (str != NULL)
 next_token = str;
 token_string = next_token;
 if (token_string == NULL)
 return (NULL);
-
 while (token_string[token_index] != '\0')
 {
 if (match_char(token_string[token_index], delim) == 0)
 break;
 token_index++;
 }
-
 if (next_token[token_index] == '\0' || next_token[token_index] == '#')
 {
 next_token = NULL;
 return (NULL);
 }
-
 token_string = next_token + token_index;
 next_token = token_string;
-
 token_index = 0;
 while (next_token[token_index] != '\0')
 {
