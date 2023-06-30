@@ -97,9 +97,9 @@ int check_builtin(char **cmd);
 int builtin_cmd(char **cmd, int st);
 void exit_built_in_stat(char **cmd, char *input, char **argv, int c, int stat);
 int change_dir(char **cmd, __attribute__((unused))int st);
-int dis_env(__attribute__((unused)) char **cmd, __attribute__((unused)) int st);
+int dis_env(__attribute__((unused))char **c, __attribute__((unused))int s);
 int echo_bul(char **cmd, int st);
-int history_dis(__attribute__((unused))char **c, __attribute__((unused)) int st);
+int history_dis(__attribute__((unused))char **c, __attribute__((unused))int s);
 
 /****** BUILT-IN COMMANDS STRUCT *****/
 
